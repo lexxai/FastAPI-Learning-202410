@@ -1,3 +1,4 @@
+from pathlib import Path
 from fastapi import FastAPI
 import torch
 import numpy as np
@@ -6,11 +7,13 @@ import onnxruntime
 
 app = FastAPI()
 
-
+models = Path(__file__).parent.parent.joinpath("models")
 tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
 
 # https://github.com/onnx/models/tree/main/validated/text/machine_comprehension/roberta
-session = onnxruntime.InferenceSession("./roberta-sequence-classification-9.onnx")
+session = onnxruntime.InferenceSession(
+    str(models / "roberta-sequence-classification-9.onnx"),
+)
 
 
 def to_numpy(tensor):
