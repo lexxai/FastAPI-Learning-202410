@@ -1,3 +1,3 @@
+For study cource "Complete Guide to Python Fundamentals for MLOps"
 
-
-macOS x86
+tested: on macOS x86, python3.11
