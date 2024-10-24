@@ -7,12 +7,14 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.11,<3.12"
 fastapi = {extras = ["standard"], version = "^0.115.3"}
 transformers = "^4.45.2"
 onnxruntime = "^1.19.2"
 torch = "2.2.2"
-numpy = "1.24.0"
+numpy = "1.26.0"
+tensorflow = "2.16.2"
+tf-keras = "2.16"
 
 
 [build-system]
