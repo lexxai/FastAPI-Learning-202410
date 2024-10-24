@@ -1,3 +1,5 @@
-# For study cource "Complete Guide to Python Fundamentals for MLOps"
+# For course "[Complete Guide to Python Fundamentals for MLOps](https://www.linkedin.com/learning/complete-guide-to-python-fundamentals-for-mlops/introduction-to-python)"
 
-tested: on macOS x86, python3.11
+Tested platform: 
+ - macOS Sonoma 14.7, Intel
+ - python3.11
